@@ -119,8 +119,7 @@ function UserEdit() {
 
       <Link
         className="save-btnEl"
-        to={`pages`}
-        type="submit"
+        to={`/Nutzerverwaltung/pages`}
         onClick={addUser}
       >
         Speichern
