@@ -119,7 +119,7 @@ function UserEdit() {
 
       <Link
         className="save-btnEl"
-        to={`/pages`}
+        to={`pages`}
         type="submit"
         onClick={addUser}
       >
