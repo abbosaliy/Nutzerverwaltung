@@ -1,0 +1,27 @@
+.create-user {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+select {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: #f0f2f5;
+}

@@ -1,0 +1,109 @@
+.user-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-content {
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  align-items: center;
+}
+
+.user-img {
+  flex-shrink: 0;
+}
+
+.user-imges {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e0e0e0;
+}
+
+.user-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user-name h5 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.deleteBtn {
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #d9363e;
+}
+
+.edit-BtnEl {
+  padding: 6px 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.edit-BtnEl:hover {
+  background-color: #0056b3;
+}
+
+.user-daten {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.user-daten_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #f0f2f5;
+  padding: 1rem;
+  border-radius: 12px;
+  min-width: 200px;
+  flex: 1;
+}
+
+.user-daten_box span {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

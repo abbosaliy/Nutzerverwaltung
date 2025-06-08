@@ -1,0 +1,42 @@
+.create-user {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+select {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: #f0f2f5;
+}
+
+.save-btnEl {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.save-btnEl:hover {
+  background-color: #0056b3;
+}
