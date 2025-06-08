@@ -8,7 +8,7 @@ function Sidebar() {
       <aside>
         <div className="user-text">User Verwaltung</div>
         <nav>
-          <Link to={'/pages'}>
+          <Link to={'pages'}>
             <Button
               size="large"
               variant="contained"
@@ -16,7 +16,7 @@ function Sidebar() {
               Übersicht
             </Button>
           </Link>
-          <Link to={'/user'}>
+          <Link to={'user'}>
             <Button
               size="large"
               variant="contained"
