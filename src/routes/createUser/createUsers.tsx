@@ -20,6 +20,7 @@ function CreateUser() {
   function addUser() {
     const newUser = { ...formatData, id: Date.now() };
     setUser({ type: 'ADD', payload: newUser });
+    alert('Die Daten wurden erfolgreich gespeichert.');
   }
 
   function handleChange(
@@ -41,6 +42,7 @@ function CreateUser() {
           name="name"
           type="text"
           placeholder="Name eingeben"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -50,6 +52,7 @@ function CreateUser() {
           value={formatData.birthDate}
           name="birthDate"
           type="date"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -72,6 +75,7 @@ function CreateUser() {
           name="email"
           type="email"
           placeholder="example@mail.com"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -82,6 +86,7 @@ function CreateUser() {
           name="post"
           type="text"
           placeholder="Beispiel str 2"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -92,6 +97,7 @@ function CreateUser() {
           name="phone"
           type="tel"
           placeholder="+49"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -102,6 +108,7 @@ function CreateUser() {
           name="webseite"
           type="url"
           placeholder="www.beispiel.de"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>

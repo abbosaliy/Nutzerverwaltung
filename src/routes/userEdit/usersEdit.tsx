@@ -28,7 +28,7 @@ function UserEdit() {
       id: ID ? Number(ID) : Date.now(),
     };
     setUser({ type: 'EDIT', payload: newUser });
-    alert('User Erfolgereich gespeichert');
+    alert('Änderung wurde erfolgreich gespeichert.');
   }
 
   function handleChange(
@@ -50,6 +50,7 @@ function UserEdit() {
           name="name"
           type="text"
           placeholder="Name eingeben"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -81,6 +82,7 @@ function UserEdit() {
           name="email"
           type="email"
           placeholder="example@mail.com"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -91,6 +93,7 @@ function UserEdit() {
           name="post"
           type="text"
           placeholder="Beispiel str 2"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -101,6 +104,7 @@ function UserEdit() {
           name="phone"
           type="tel"
           placeholder="+49"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>
@@ -111,6 +115,7 @@ function UserEdit() {
           name="webseite"
           type="url"
           placeholder="www.beispiel.de"
+          autoComplete="off"
           onChange={handleChange}
         />
       </div>

@@ -4,7 +4,7 @@
 
 aside {
   gap: 2rem;
-  width: 200px;
+  width: 300px;
   padding: 2rem;
   background-color: #e0f7fa;
   display: flex;
@@ -18,14 +18,10 @@ nav {
 }
 
 .user-text {
-  background-color: antiquewhite;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-family: 'Segoe UI', sans-serif;
-  font-weight: 550;
-  gap: 1rem;
+  color: #333;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 650;
 }
 
 .user-icon {

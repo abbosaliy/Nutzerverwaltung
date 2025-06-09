@@ -7,6 +7,7 @@ import { UserContext, userSaveToLocalStorage } from './context/userContex';
 import { clickerUser } from './hooks/userReducer';
 import { useEffect, useReducer } from 'react';
 import UserEdit from './routes/userEdit/usersEdit';
+import Index from './routes/Index/Index';
 
 function App() {
   const [user, setUser] = useReducer(clickerUser, userSaveToLocalStorage);
@@ -20,6 +21,10 @@ function App() {
       path: '/Nutzerverwaltung',
       element: <Sidebar />,
       children: [
+        {
+          index: true,
+          element: <Index />,
+        },
         {
           path: 'pages',
           element: <UserPages />,
