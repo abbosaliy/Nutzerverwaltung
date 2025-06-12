@@ -16,7 +16,7 @@ function UserPages() {
           <div className="user-img">
             <img
               className="user-imges"
-              src={`${import.meta.env.BASE_URL}userFoto/user.avif`}
+              src={us.image}
               alt="user"
             />
           </div>

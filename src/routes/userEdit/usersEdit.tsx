@@ -9,7 +9,11 @@ function UserEdit() {
   const { itemID } = useParams();
   const ID = Number(itemID);
 
-  const editingUser: User = user.find((userId) => userId.id === ID)!;
+  const editingUser = user.find((userId) => userId.id === ID);
+
+  if (!editingUser) {
+    return <h2>Keine user gefunden</h2>;
+  }
 
   const [formatData, setFormatData] = useState<User>({
     id: 0,
@@ -124,7 +128,7 @@ function UserEdit() {
 
       <Link
         className="save-btnEl"
-        to={`/Nutzerverwaltung/pages`}
+        to={`/Nutzerverwaltung/users`}
         onClick={addUser}
       >
         Speichern

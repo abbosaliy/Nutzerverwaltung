@@ -8,7 +8,7 @@ function Sidebar() {
       <aside>
         <div className="user-text">Nutzerverwaltung</div>
         <nav>
-          <Link to={'pages'}>
+          <Link to={'users'}>
             <Button
               size="large"
               variant="contained"

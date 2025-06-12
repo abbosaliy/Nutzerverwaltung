@@ -26,12 +26,12 @@ function App() {
           element: <Index />,
         },
         {
-          path: 'pages',
+          path: 'users',
           element: <UserPages />,
         },
 
         {
-          path: 'pages/edit/:itemID',
+          path: 'users/edit/:itemID',
           element: <UserEdit />,
         },
         {

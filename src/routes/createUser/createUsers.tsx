@@ -15,12 +15,32 @@ function CreateUser() {
     post: '',
     phone: '',
     webseite: '',
+    image: '',
   });
 
   function addUser() {
-    const newUser = { ...formatData, id: Date.now() };
-    setUser({ type: 'ADD', payload: newUser });
-    alert('Die Daten wurden erfolgreich gespeichert.');
+    if (
+      !formatData.name ||
+      !formatData.birthDate ||
+      !formatData.gender ||
+      !formatData.email ||
+      !formatData.post ||
+      !formatData.phone ||
+      !formatData.webseite
+    ) {
+      alert('Bitte füllen Sie alle Pflichtfelder aus');
+    } else {
+      let userImage = '';
+
+      if (formatData.gender === 'mann') {
+        userImage = '/mann.png';
+      } else if (formatData.gender === 'frau') {
+        userImage = '/frau.png';
+      }
+      const newUser = { ...formatData, id: Date.now(), image: userImage };
+      setUser({ type: 'ADD', payload: newUser });
+      alert('Die Daten wurden erfolgreich gespeichert.');
+    }
   }
 
   function handleChange(

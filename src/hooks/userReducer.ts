@@ -7,6 +7,7 @@ export type User = {
   post: string;
   phone: string;
   webseite: string;
+  image: string;
 };
 
 export type userState = User[];
@@ -25,8 +26,8 @@ export function clickerUser(prevState: userState, action: userAction) {
       return [...prevState, action.payload];
 
     case 'EDIT':
-      return prevState.map((u) =>
-        u.id === action.payload.id ? action.payload : u
+      return prevState.map((users) =>
+        users.id === action.payload.id ? action.payload : users
       );
 
     case 'REMOVE':
