@@ -15,7 +15,6 @@ function CreateUser() {
     post: '',
     phone: '',
     webseite: '',
-    image: '',
   });
 
   function addUser() {
@@ -30,14 +29,7 @@ function CreateUser() {
     ) {
       alert('Bitte füllen Sie alle Pflichtfelder aus');
     } else {
-      let userImage = '';
-
-      if (formatData.gender === 'mann') {
-        userImage = '/mann.png';
-      } else if (formatData.gender === 'frau') {
-        userImage = '/frau.png';
-      }
-      const newUser = { ...formatData, id: Date.now(), image: userImage };
+      const newUser = { ...formatData, id: Date.now() };
       setUser({ type: 'ADD', payload: newUser });
       alert('Die Daten wurden erfolgreich gespeichert.');
     }

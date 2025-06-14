@@ -16,7 +16,11 @@ function UserPages() {
           <div className="user-img">
             <img
               className="user-imges"
-              src={us.image}
+              src={
+                us.gender === 'mann'
+                  ? `${import.meta.env.BASE_URL}/mann.png`
+                  : `${import.meta.env.BASE_URL}/frau.png`
+              }
               alt="user"
             />
           </div>

@@ -7,7 +7,6 @@ export type User = {
   post: string;
   phone: string;
   webseite: string;
-  image: string;
 };
 
 export type userState = User[];
