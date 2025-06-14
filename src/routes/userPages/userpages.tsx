@@ -13,9 +13,9 @@ function UserPages() {
           key={us.id}
           className="user-content"
         >
-          <div className="user-img">
+          <div className="user-foto">
             <img
-              className="user-imges"
+              className="user-foto_img"
               src={
                 us.gender === 'mann'
                   ? `${import.meta.env.BASE_URL}/mann.png`
@@ -25,7 +25,7 @@ function UserPages() {
             />
           </div>
           <div className="user-info">
-            <div className="user-name">
+            <div className="user-header">
               <h5>{us.name}</h5>
               <Link
                 className="edit-BtnEl"
@@ -60,7 +60,6 @@ function UserPages() {
                   {us.birthDate}
                 </div>
                 <div className="info-box">
-                  {' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={24}
@@ -90,7 +89,6 @@ function UserPages() {
               </div>
               <div className="user-daten_box">
                 <div className="info-box">
-                  {' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

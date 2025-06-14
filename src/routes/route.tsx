@@ -6,7 +6,7 @@ function Sidebar() {
   return (
     <div className="user-container">
       <aside>
-        <div className="user-text">Nutzerverwaltung</div>
+        <div className="user-logoText">Nutzerverwaltung</div>
         <nav>
           <Link to={'users'}>
             <Button

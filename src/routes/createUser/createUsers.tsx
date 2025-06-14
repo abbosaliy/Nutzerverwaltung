@@ -31,7 +31,7 @@ function CreateUser() {
     } else {
       const newUser = { ...formatData, id: Date.now() };
       setUser({ type: 'ADD', payload: newUser });
-      alert('Die Daten wurden erfolgreich gespeichert.');
+      alert('Die Daten wurden erfolgreich gespeichert');
     }
   }
 

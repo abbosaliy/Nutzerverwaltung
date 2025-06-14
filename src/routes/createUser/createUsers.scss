@@ -4,11 +4,18 @@
   padding: 1rem 2rem;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
+  @media (max-width: 700px) {
+    padding: 0rem;
+  }
 }
 
 .input-box {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 700px) {
+    gap: 0.6rem;
+  }
 }
 
 input {
@@ -17,6 +24,10 @@ input {
   border-radius: 8px;
   background-color: #f0f2f5;
   font-family: 'Segoe UI', sans-serif;
+
+  @media (max-width: 700px) {
+    padding: 0.6rem;
+  }
 }
 
 select {
@@ -24,4 +35,8 @@ select {
   padding: 0.8rem;
   border-radius: 8px;
   background-color: #f0f2f5;
+
+  @media (max-width: 700px) {
+    padding: 0.6rem;
+  }
 }

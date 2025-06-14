@@ -1,5 +1,11 @@
 .user-container {
   display: flex;
+  width: 100%;
+
+  @media (max-width: 700px) {
+    overflow-x: hidden;
+    flex-direction: column;
+  }
 }
 
 aside {
@@ -9,26 +15,44 @@ aside {
   background-color: #e0f7fa;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 nav {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media (max-width: 700px) {
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
 }
 
-.user-text {
+.user-logoText {
   color: #333;
   padding-top: 2rem;
   font-size: 2rem;
   font-weight: 650;
-}
 
-.user-icon {
-  width: 24px;
-  height: 24px;
+  @media (max-width: 700px) {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 main {
   width: 85%;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }

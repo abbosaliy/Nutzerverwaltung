@@ -32,7 +32,7 @@ function UserEdit() {
       id: ID ? Number(ID) : Date.now(),
     };
     setUser({ type: 'EDIT', payload: newUser });
-    alert('Änderung wurde erfolgreich gespeichert.');
+    alert('Änderung wurde erfolgreich gespeichert');
   }
 
   function handleChange(
