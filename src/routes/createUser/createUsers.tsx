@@ -64,6 +64,7 @@ function CreateUser() {
           value={formatData.birthDate}
           name="birthDate"
           type="date"
+          placeholder="tt.mm.jj"
           autoComplete="off"
           onChange={handleChange}
         />
