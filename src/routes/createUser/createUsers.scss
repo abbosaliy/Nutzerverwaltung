@@ -22,8 +22,11 @@ input {
   border: none;
   padding: 0.8rem;
   border-radius: 8px;
+  font-size: 0.8rem;
   background-color: #f0f2f5;
   font-family: 'Segoe UI', sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
 
   @media (max-width: 700px) {
     padding: 0.6rem;
