@@ -7,7 +7,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-.user-content {
+.user {
   display: flex;
   gap: 2rem;
   background-color: white;
@@ -24,51 +24,36 @@
   }
 }
 
-.user-foto {
+.user__foto {
   flex-shrink: 0;
+  img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e0e0e0;
+  }
 }
 
-.user-foto_img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #e0e0e0;
-}
-
-.user-header {
+.user__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  gap: 5px;
 
+  h5 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
   @media (max-width: 700px) {
     display: flex;
     gap: 1rem;
   }
 }
 
-.user-name h5 {
-  font-size: 1.5rem;
-  color: #333;
-  margin: 0;
-}
-
-.deleteBtn {
-  background-color: #ff4d4f;
-  border: none;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.deleteBtn:hover {
-  background-color: #d9363e;
-}
-
-.edit-BtnEl {
+.user__edit-BtnEl {
   padding: 6px 14px;
   background-color: #007bff;
   color: white;
@@ -80,8 +65,22 @@
   transition: background-color 0.3s ease;
 }
 
-.edit-BtnEl:hover {
+.user__edit-BtnEl:hover {
   background-color: #0056b3;
+}
+
+.user__deleteBtn {
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user__deleteBtn:hover {
+  background-color: #d9363e;
 }
 
 .user-daten {
@@ -90,7 +89,7 @@
   flex-wrap: wrap;
 }
 
-.user-daten_box {
+.user__daten-box {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -101,7 +100,7 @@
   flex: 1;
 }
 
-.user-daten_box span {
+.user__daten-box span {
   color: #555;
   font-size: 0.95rem;
 }

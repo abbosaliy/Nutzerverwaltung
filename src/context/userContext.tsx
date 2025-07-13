@@ -1,7 +1,7 @@
 import React, { createContext } from 'react';
 import type { userAction, userState } from '../hooks/userReducer';
 
-export const userSaveToLocalStorage: userState = JSON.parse(
+export const userLoadLocalStorage: userState = JSON.parse(
   localStorage.getItem('users') || '[]'
 );
 

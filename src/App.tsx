@@ -1,16 +1,16 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.scss';
-import Sidebar from './routes/route';
 import CreateUser from './routes/createUser/createUsers';
-import UserPages from './routes/userPages/userpages';
-import { UserContext, userSaveToLocalStorage } from './context/userContex';
-import { clickerUser } from './hooks/userReducer';
+import UserPages from './routes/userPages/usersPages';
+import { UserContext, userLoadLocalStorage } from './context/userContext';
+import { userReducer } from './hooks/userReducer';
 import { useEffect, useReducer } from 'react';
 import UserEdit from './routes/userEdit/usersEdit';
 import Index from './routes/Index/Index';
+import Route from './routes/route';
 
 function App() {
-  const [user, setUser] = useReducer(clickerUser, userSaveToLocalStorage);
+  const [user, setUser] = useReducer(userReducer, userLoadLocalStorage);
 
   useEffect(() => {
     localStorage.setItem('users', JSON.stringify(user));
@@ -19,7 +19,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/Nutzerverwaltung',
-      element: <Sidebar />,
+      element: <Route />,
       children: [
         {
           index: true,

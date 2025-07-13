@@ -1,8 +1,9 @@
 import { useContext, useState } from 'react';
 import './usersEdit.scss';
-import { UserContext } from '../../context/userContex';
+import { UserContext } from '../../context/userContext';
 import type { User } from '../../hooks/userReducer';
 import { Link, useParams } from 'react-router-dom';
+import Input from '../../components/Input';
 
 function UserEdit() {
   const { user, setUser } = useContext(UserContext);
@@ -49,21 +50,21 @@ function UserEdit() {
     <div className="create-user">
       <div className="input-box">
         <h4>User name </h4>
-        <input
+        <Input
           value={formatData.name}
           name="name"
           type="text"
           placeholder="Name eingeben"
-          autoComplete="off"
           onChange={handleChange}
         />
       </div>
       <div className="input-box">
         <h4>Geburtsdatum</h4>
-        <input
+        <Input
           value={formatData.birthDate}
           name="birthDate"
           type="date"
+          placeholder=""
           onChange={handleChange}
         />
       </div>
@@ -81,45 +82,41 @@ function UserEdit() {
       </div>
       <div className="input-box">
         <h4>Email Adresse</h4>
-        <input
+        <Input
           value={formatData.email}
           name="email"
           type="email"
           placeholder="example@mail.com"
-          autoComplete="off"
           onChange={handleChange}
         />
       </div>
       <div className="input-box">
         <h4>Post Adresse</h4>
-        <input
+        <Input
           value={formatData.post}
           name="post"
           type="text"
           placeholder="Beispiel str 2"
-          autoComplete="off"
           onChange={handleChange}
         />
       </div>
       <div className="input-box">
         <h4>Telefon nummer</h4>
-        <input
+        <Input
           value={formatData.phone}
           name="phone"
           type="tel"
           placeholder="+49"
-          autoComplete="off"
           onChange={handleChange}
         />
       </div>
       <div className="input-box">
         <h4>Webseite</h4>
-        <input
+        <Input
           value={formatData.webseite}
           name="webseite"
           type="url"
           placeholder="www.beispiel.de"
-          autoComplete="off"
           onChange={handleChange}
         />
       </div>

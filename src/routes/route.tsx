@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import { Link, Outlet } from 'react-router-dom';
 import './route.scss';
 
-function Sidebar() {
+function Route() {
   return (
     <div className="user-container">
       <aside>
@@ -33,4 +33,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Route;

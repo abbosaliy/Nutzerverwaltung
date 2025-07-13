@@ -19,7 +19,7 @@ export type userAction =
     }
   | { type: 'EDIT'; payload: User };
 
-export function clickerUser(prevState: userState, action: userAction) {
+export function userReducer(prevState: userState, action: userAction) {
   switch (action.type) {
     case 'ADD':
       return [...prevState, action.payload];
